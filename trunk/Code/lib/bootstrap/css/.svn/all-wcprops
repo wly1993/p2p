@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css
+END
+variables.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/variables.css
+END
+print.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/print.css
+END
+bootstrap.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/bootstrap.css
+END
+media.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/media.css
+END
+normalize.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/normalize.css
+END
+theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/theme.css
+END
+mixins.css
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/mixins.css
+END
+responsive-embed.css
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/css/responsive-embed.css
+END

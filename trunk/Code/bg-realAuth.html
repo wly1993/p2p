@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证管理</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <!--引入bootstrap样式-->
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+    <!--引入自定义样式-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--引入jq-->
+    <script src="./lib/jquery/dist/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- 页面额外依赖库(验证插件) -->
+    <link rel="stylesheet" href="./lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="./lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <script src="./lib/bootstrapvalidator/dist/js/language/zh_CN.js"></script>
+
+
+</head>
+<body>
+<!--模态框-->
+<!--Button trigger modal -->
+<div class="modal fade" id="realAuth-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button  type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加对话框</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="realAuth-save" >保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        // 模态框显示完毕后触发的事件
+        $("#realAuth-Modal").on("shown.bs.modal",function(e){
+            // 获取目标按钮
+            var $btn = $(e.relatedTarget);
+            // 获取命令模式
+            var cmd = $btn.data("cmd");
+
+            var $modalBody = $(this).find(".modal-body");
+            if(cmd==='create'){
+                // 找到模态对话框正文部分容器，使用load方法直接把外部的表单加载到容器
+                $modalBody.load("realAuthForm.html #myform");
+            }else{
+                $modalBody.load("realAuthForm.html #myform",function(){
+//                        alert("id:" + $btn.data("id"));
+                    var rowData = $btn.data("rowdata");
+                    // 1) 找到所有的表单项
+                    var $inputs = $(this).find("#myform :input")
+                    // 2) 遍历所有表单项
+                    $inputs.each(function(i,obj){
+                        // 3) 获得每一个表单项
+                        console.log(obj, obj.type);
+
+                        // 4) 判断表单项的类型
+                        if(obj.type === "radio"){
+                            if(obj.value == rowData[obj.name]){
+                                obj.checked = true;
+                            }
+                        }else{
+                            obj.value = rowData[obj.name];
+                        }
+                    });
+                });
+            }
+
+        });
+
+        // 对保存按钮做监听，点击后，实现AJAX提交
+        $("#realAuth-save").on("click",function(){
+            // 1、确定表单
+            var $form = $("#myform");
+            // 2、在表单下搜索表单（输入框）项
+                var $inputArr = $form.find(":input");
+                // 3、遍历所有表达项，获取值
+                var paramObj = {};
+                $inputArr.each(function(index,obj){
+                    if(obj.type=="radio"){
+                        if(obj.checked){
+                            paramObj[obj.name] = obj.value;
+//                            console.log(arguments,obj.value);
+                        }
+                    }else{
+                        paramObj[obj.name] = obj.value;
+                    }
+                });
+
+//             4、检查
+                console.log('paramObj:',paramObj);
+                console.log('paramObj:',$form.serialize());
+
+//             5、提交
+                $.post("/save",paramObj, function(data){
+
+            $.post("data/success.json",$form.serialize(), function(data){
+                //  请求成功后的回调
+//                    console.log(data);
+                if(data.success){ // 保存成功
+                    alert(data.message)
+                    $("#realAuth-Modal").modal("hide");
+                    // 刷新页面
+                    loadData();
+                }else{ // 保存失败
+                    alert(data.message);
+                }
+            });
+
+        });
+    })
+</script>
+<!--头部-->
+<header class="topbar navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--  电话 -->
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-phone-alt"></span>
+                <i>028-86261949</i>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">帮助</a></li>
+                <li class="hidden-xs">
+                    <a id="callUs" href="#" data-toggle="tooltip" data-placement="bottom"  data-html="true" title="<img src='./imges/contract.png'>">
+                        <i class="fa fa-qq"></i>
+                        联系客服
+                    </a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+<!--导航-->
+<nav class="daohang navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./imges/logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">实名认证管理</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--正文-->
+<div id="contant" class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="pull-left">实名认证管理</span>
+            <button data-cmd="create" id="realAuth-Create" data-target="#realAuth-Modal" data-toggle="modal" class="btn btn-primary btn-sm pull-right" >添加</button>
+
+        </div>
+
+        <div class="panel-body">
+            <table class="table" id="realAuth-grid">
+                <thead>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>证件类型</th>
+                    <th>证件号码</th>
+                    <th>操作</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <ul id="realAuth-pagebar"></ul>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="bottombar" class="row">
+    <div class="container">
+        <div class="col-sm-8">
+            <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+            <p> 版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+            <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+            <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+            <p class="last">蜀ICP备14030149号-1  蜀公网安备510114990541</p>
+        </div>
+        <div class="col-sm-2">
+            <p>官方微博：</p>
+            <img src="./imges/sina.png" alt="">
+            <img src="./imges/txwb.png" alt="">
+        </div>
+        <div class="col-sm-2">
+            <p>官方微信：</p>
+            <img src="./imges/wx.jpg" alt="">
+        </div>
+    </div>
+</footer>
+<script>
+    $('#callUs').tooltip();
+</script>
+<!--  1。引入模板 -->
+<script src="lib/artTemplate-master/dist/template.js"></script>
+<!--  2. 定义模板-->
+<script type="text/html" id="realAuth-rowTpl">
+    {{each list as value i}}
+    <tr>
+        <td>{{value.truename}}</td>
+        <td>{{value.gender}}</td>
+        <td>{{value.idType}}</td>
+        <td>{{value.idNumber}}</td>
+        <td>
+            <button data-rowData="{{value.toString}}" data-id="{{value.id}}" data-cmd="edit" class="btn btn-success btn-sm"  data-target="#realAuth-Modal" data-toggle="modal">编辑</button>
+            <button data-cmd="delete" class="btn btn-danger btn-sm">删除</button>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<!-- 3、渲染模板-->
+<script>
+    // 页面全局的缓存对象
+    var realAuthDatas = {};
+    function loadData(){
+
+        $.get("data/realAuth.json",{},function(result){
+            // 1、 获取返回数据
+            console.log(result.datas);
+            // 2、 加入缓存
+            realAuthDatas = result.datas;
+            // 3、 定义分页查询
+            var currentPage = 1;
+            var pageSize = 5;
+            var totalCount = realAuthDatas.length;
+            var totalPage = Math.ceil(totalCount /pageSize );
+            $("#realAuth-pagebar").twbsPagination({
+                // 首页
+                first: '首页',
+                // 上一页
+                prev: '上一页',
+                // 下一页
+                next: '下一页',
+                // 尾页
+                last: '尾页',
+                // 总页数
+                totalPages: totalPage,
+                // 同时显示几个页码
+                visiblePages: 5,
+                // 点击页码按钮触发
+                onPageClick: function (event, page) {
+                    var start = (page -1) * pageSize;
+                    var end = Math.min(start+pageSize, totalCount);
+                    // 准备一个收集当前页需要显示数据的集合
+                    var willShowDatas = [];
+                    for (var i = start; i<end; i++){
+                        // 把需要显示的数据，放入一个新集合
+                        willShowDatas.push(realAuthDatas[i]);
+                    }
+                    // 合并模板
+                    var rsHtml =template("realAuth-rowTpl",{"list": willShowDatas})
+                    // 渲染页面
+                    $("#realAuth-grid").find("tbody").html(rsHtml);
+
+                }
+            });
+        });
+    }
+
+    $(function(){
+        loadData();
+    })
+</script>
+<!-- 1、 引入 -->
+<script src="bower_components/twbs-pagination/jquery.twbsPagination.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "../lib/font-awesome/css/font-awesome.min.css";
+#contant .panel-heading span {
+  border-bottom: 0px;
+  font-size: 18px;
+  color: black;
+  font-weight: 100;
+  margin-left: 15px;
+}
+#contant .panel-heading button {
+  color: white;
+}

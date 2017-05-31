@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo
+END
+print.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/print.html
+END
+node-template-express.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/node-template-express.js
+END
+helper.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/helper.html
+END
+basic.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/basic.html
+END
+include.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/include.html
+END
+debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/debug.html
+END
+node-template.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/node-template.js
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/index.html
+END
+compile.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/compile.html
+END
+debug-syntax.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/debug-syntax.html
+END
+no-escape.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/no-escape.html
+END

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import "../lib/font-awesome/css/font-awesome.min.css";
+#contant .btnrightbtn {
+  display: none;
+}
+#contant .col-sm-3 .list-group-item {
+  background: #eeeeee;
+  padding: 0;
+}
+#contant .col-sm-3 .list-group-item a {
+  display: block;
+  max-width: 100%;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 15px;
+}
+#contant .col-sm-3 .list-group-item ul {
+  padding-left: 0px;
+}
+#contant .col-sm-3 .list-group-item ul li {
+  padding-left: 25px;
+  background: white;
+  list-style-type: none;
+}
+#contant .right-section {
+  position: relative;
+}
+#contant .right-section .panel {
+  border-top: 0px;
+  border-radius: 0 0 7px 7px;
+}
+#contant .right-section .panel-body .message {
+  border-bottom: 1px solid #DDDDDD;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#contant .right-section .panel-body .message img {
+  width: 100px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+#contant .right-section .panel-body .message .message-right {
+  padding-left: 10px;
+}
+#contant .right-section .panel-body .message .message-right p {
+  line-height: 26px;
+}
+#contant .right-section .panel-body .money {
+  line-height: 70px;
+  font-size: 20px;
+}
+#contant .right-section .panel-body .money .row div a {
+  text-decoration: none;
+}
+#contant .right-section .panel-body .btnopt {
+  margin-top: 20px;
+}
+#contant .right-section .panel-body .approve {
+  margin-top: 46px;
+}
+#contant .right-section .panel-body .approve .approvetextbox {
+  margin-bottom: 10px;
+}
+#contant .right-section .panel-body .approve .approve-legt-text {
+  padding-left: 66px;
+}
+#contant .right-section .panel-body .approve .approve-legt-text p.textbold {
+  color: #333;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  #contant .row {
+    position: relative;
+    transition: left 500ms;
+  }
+  #contant .row .btnrightbtn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    padding: 20px 8px;
+  }
+  #contant .col-sm-3 {
+    position: absolute;
+    width: 50%;
+    left: -50%;
+  }
+  #contant .row.active {
+    left: 50%;
+  }
+}

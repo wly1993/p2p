@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native
+END
+print.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/print.html
+END
+helper.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/helper.html
+END
+basic.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/basic.html
+END
+include.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/include.html
+END
+debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/debug.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/index.html
+END
+compile.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/compile.html
+END
+debug-syntax.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/debug-syntax.html
+END
+no-escape.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/no-escape.html
+END
+tag.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/demo/template-native/tag.html
+END

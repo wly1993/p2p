@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 水平表单项 -->
+<form id="myform" class="form-horizontal">
+    <div class="form-group">
+        <label for="truename" class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input type="text" name="truename"  class="form-control" id="truename" placeholder="请填写真实姓名..">
+        </div>
+    </div>
+    <div class="form-group">
+        <label   class="col-sm-2 control-label">性别</label>
+        <div class="col-sm-10 form-radio">
+            <input type="radio" name="gender" value="男"> 男 &emsp;
+            <input type="radio" name="gender" value="女"> 女
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="idType" class="col-sm-2 control-label">证件类型</label>
+        <div class="col-sm-10">
+            <select name="idType" id="idType" class="form-control">
+                <option value="身份证">身份证</option>
+                <option value="军官证">军官证</option>
+                <option value="驾驶证">驾驶证</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="idNumber" class="col-sm-2 control-label">证件号码</label>
+        <div class="col-sm-10">
+            <input type="text" name="idNumber" class="form-control" id="idNumber" placeholder="证件号码">
+        </div>
+    </div>
+</form>
+</body>
+</html>

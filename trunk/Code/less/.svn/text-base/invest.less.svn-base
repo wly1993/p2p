@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+        #gridHead{
+                font-size:18px;
+                color: #ccc;
+        }
+        #gridBody{
+                font-size: 15px;
+        }
+

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+//引入字体样式库
+//定义颜色
+@basecolor: #2e8ece;
+.col-sm-4{
+  //height: 50px;
+  //background: pink;
+  .panel-heading1{
+   background:#40d47e;
+    height: 50px;
+    line-height: 50px;
+    font-size:23px;
+    color: white;
+  }
+  .panel-heading2{
+    background:#ec7e20;
+    height: 50px;
+    line-height: 50px;
+    font-size:23px;
+    color: white;
+  }
+  .panel-heading3{
+    background:#2ca2ee;
+    height: 50px;
+    line-height: 50px;
+    font-size:23px;
+    color: white;
+  }
+
+  .panel-body{
+    padding: 20px;
+    p{
+      font-size: 18px;
+    }
+    ul{
+      list-style-type: none;
+      div{
+        height:10px;
+        width:10px;
+        background: deeppink;
+        float: left;
+        margin: 4px 5px 0 0;
+      }
+    }
+  }
+}

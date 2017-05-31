@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <!--引入bootstrap样式-->
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+    <!--引入自定义样式-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--引入jq-->
+    <script src="./lib/jquery/dist/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!--引入表单验证-->
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/language/zh_CN.js.js"></script>
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.css"/>
+
+</head>
+<body>
+<!--头部-->
+<header class="topbar navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--  电话 -->
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-phone-alt"></span>
+                <i>028-86261949</i>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">帮助</a></li>
+                <li class="hidden-xs">
+                    <a id="callUs" href="#" data-toggle="tooltip" data-placement="bottom"  data-html="true" title="<img src='./imges/contract.png'>">
+                        <i class="fa fa-qq"></i>
+                        联系客服
+                    </a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+<!--导航-->
+<nav class="daohang navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./imges/logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <p>用户注册</p>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--正文-->
+<div class="el-contain-reg">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">用户注册</div>
+            <div class="panel-body">
+                <form action="#" id="regform" class="form-horizontal ">
+                    <p class="form-control-static header">请填写注册信息，点击“提交注册”即可完成注册！</p>
+                    <div class="form-group">
+
+                        <label  class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword3" name="username" placeholder="">
+                            <p >用户名为2~16位字母，数字，符号或中文</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label ">密  码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="pwd" id="inputEmail4" placeholder="">
+                            <p>密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">确认密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="confirmPwd" id="inputEmail3" placeholder="">
+                            <p>请再次填写密码</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div  class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-success">同意协议并注册</button>
+                            <span><a href="login.html">已有账号，马上登录</a></span>
+                            <p class="dhcp"><a href="#">《使用协议说明书》</a></p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="bottombar" class="row">
+    <div class="container">
+        <div class="col-sm-8">
+            <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+            <p> 版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+            <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+            <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+            <p class="last">蜀ICP备14030149号-1  蜀公网安备510114990541</p>
+        </div>
+        <div class="col-sm-2">
+            <p>官方微博：</p>
+            <img src="./imges/sina.png" alt="">
+            <img src="./imges/txwb.png" alt="">
+        </div>
+        <div class="col-sm-2">
+            <p>官方微信：</p>
+            <img src="./imges/wx.jpg" alt="">
+        </div>
+    </div>
+</footer>
+<script>
+
+    $('#callUs').tooltip();
+
+    //    表单验证
+    $(function(){
+        $('#regform').bootstrapValidator({
+            message: 'This value is not valid',
+            //全局的提示
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            //图标的设置
+            //group: '.form-group',
+            //规则
+            fields: {
+
+                username: {
+                    message: '用户名是无效的',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名是必需的,不能是空的'
+                        },
+                        regexp: {
+                            regexp: /[\u4e00-\u9fa5_a-zA-Z0-9_]{2,16}/,
+                            message: '用户名为2~16位字母，数字，符号或中文！'
+                        },
+                        different: {
+                            field: 'password',
+                            message: '用户名和密码不能相同'
+                        }
+                    }
+                },
+
+                pwd: {
+                    validators: {
+                        notEmpty: {
+                            message: '密码是必需的,不能是空的'
+                        },
+                        identical: {
+                            field: 'confirmPwd',
+                            message: '密码和确认是不一样的'
+                        },
+                        different: {
+                            field: 'username',
+                            message: '密码不能与用户名相同'
+                        }
+                    }
+                },
+                confirmPwd: {
+                    validators: {
+                        notEmpty: {
+                            message: '确认密码是必需的,不能是空的'
+                        },
+                        identical: {
+                            field: 'pwd',
+                            message: '密码和确认是不一样的'
+                        },
+                        different: {
+                            field: 'username',
+                            message: '密码不能与用户名相同'
+                        }
+                    }
+
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>

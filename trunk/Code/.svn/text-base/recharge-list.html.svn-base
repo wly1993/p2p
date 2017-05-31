@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值明细</title>
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <!--引入bootstrap样式-->
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+    <!--引入自定义样式-->
+    <link rel="stylesheet" href="./css/index.css">
+    <!--引入jq-->
+    <script src="./lib/jquery/dist/jquery.js"></script>
+    <!--引入bootstrap.js-->
+    <script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+<!--头部-->
+<header class="topbar navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--  电话 -->
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-phone-alt"></span>
+                <i>028-86261949</i>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">帮助</a></li>
+                <li class="hidden-xs">
+                    <a id="callUs" href="#" data-toggle="tooltip" data-placement="bottom"  data-html="true" title="<img src='./imges/contract.png'>">
+                        <i class="fa fa-qq"></i>
+                        联系客服
+                    </a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+<!--导航-->
+<nav class="daohang navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./imges/logo.png" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">我要投资</a></li>
+                <li><a href="#">我要借款</a></li>
+                <li class="active"><a href="#">个人中心</a></li>
+                <li><a href="#">新手指引</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--正文-->
+<div id="contant" class="container">
+    <div class="row">
+        <!--左边-->
+        <div class="col-sm-3 el-personal-left">
+            <ul class="list-group ">
+                <li class="list-group-item"><a href="#">投资项目</a></li>
+                <li class="list-group-item">
+                    <a href="#">借款项目</a>
+                    <ul>
+                        <li><a href="#">借款项目</a></li>
+                        <li><a href="#">还款明细</a></li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">我的账户</a>
+                    <ul>
+                        <li class="active"><a href="#">实名认证</a></li>
+                        <li><a href="#">银行卡管理</a></li>
+                        <li><a href="#">登录记录</a></li>
+
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">资产详情</a>
+                    <ul>
+                        <li><a href="#">账户流水</a></li>
+                        <li><a href="#">提现记录</a></l
+                            i>
+                        <li><a href="#">银行卡管理</a></li>
+                        <li><a href="#">收款明细</a></li>
+
+                    </ul>
+                </li>
+                <li class="list-group-item"><a href="#">个人资料</a></li>
+            </ul>
+        </div>
+        <!--右边-->
+        <div class="col-sm-9 right-section">
+            <!--收缩按钮-->
+            <div class="btnright">
+                <button class="btnrightbtn btn-primary btn-sm">
+                    <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="pull-left">充值明细</span>
+                    <button class="btn-danger pull-right">账户充值</button>
+                </div>
+                <div class="panel-body">
+                   <table class="table">
+                       <thead>
+                           <th>充值时间</th>
+                           <th>充值金额</th>
+                           <th>充值状态</th>
+                           <th>备注</th>
+                       </thead>
+                       <tbody>
+                           <td>2015-03-11 10:45:10</td>
+                           <td>500.00</td>
+                           <td>充值成功</td>
+                           <td>线下充值500</td>
+                       </tbody>
+                   </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="bottombar" class="row">
+    <div class="container">
+        <div class="col-sm-8">
+            <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+            <p> 版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+            <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+            <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+            <p class="last">蜀ICP备14030149号-1  蜀公网安备510114990541</p>
+        </div>
+        <div class="col-sm-2">
+            <p>官方微博：</p>
+            <img src="./imges/sina.png" alt="">
+            <img src="./imges/txwb.png" alt="">
+        </div>
+        <div class="col-sm-2">
+            <p>官方微信：</p>
+            <img src="./imges/wx.jpg" alt="">
+        </div>
+    </div>
+</footer>
+<script>
+    $('#callUs').tooltip();
+    $(".btnrightbtn").on("click",function(){
+        var isActive = $(".row.active").length;
+        console.log(isActive);
+        if(!isActive){
+            $(this).html('<span class="fa fa-angle-double-left"></span>');
+            $(".row").addClass("active");
+        }else{
+            $(this).html('<span class="fa fa-angle-double-right"></span>');
+            $(".row").removeClass("active");
+        }
+    });
+</script>
+</body>
+</html>

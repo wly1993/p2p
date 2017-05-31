@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator
+END
+greaterThan.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/greaterThan.js
+END
+creditCard.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/creditCard.js
+END
+ismn.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/ismn.js
+END
+ip.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/ip.js
+END
+stringLength.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/stringLength.js
+END
+iban.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/iban.js
+END
+phone.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/phone.js
+END
+issn.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/issn.js
+END
+date.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/date.js
+END
+color.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/color.js
+END
+meid.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/meid.js
+END
+lessThan.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/lessThan.js
+END
+imo.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/imo.js
+END
+between.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/between.js
+END
+vat.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/vat.js
+END
+isbn.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/isbn.js
+END
+id.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/id.js
+END
+callback.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/callback.js
+END
+emailAddress.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/emailAddress.js
+END
+zipCode.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/zipCode.js
+END
+uri.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/uri.js
+END
+isin.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/isin.js
+END
+ean.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/work/!svn/ver/23/p2p/trunk/Code/lib/bootstrapvalidator/test/spec/validator/ean.js
+END

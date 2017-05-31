@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test
+END
+test-helper.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test-helper.html
+END
+test-speed.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test-speed.html
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test.html
+END
+test-native.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test-native.html
+END
+test-node.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test-node.js
+END
+test-xss.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/work/!svn/ver/29/p2p/trunk/Code/lib/artTemplate-master/test/test-xss.html
+END

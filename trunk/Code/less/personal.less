@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import "../lib/font-awesome/css/font-awesome.min.css";
+@basecolor: #2e8ece;
+///*个人中心
+#contant{
+    .btnrightbtn{
+       display: none;
+    }
+        .col-sm-3{
+            .list-group-item{
+                background: lighten(#000, 93.5%);
+                padding:0;
+                a{
+                    display: block;
+                    max-width: 100%;
+                    height: 42px;
+                    line-height: 42px;
+                    padding-left: 15px;
+                }
+                ul{
+                    padding-left:0px;
+                    li{
+                        padding-left:25px;
+                        background: white;
+                        list-style-type: none;
+                    }
+                }
+
+            }
+
+        }
+        .right-section{
+            position: relative;
+            .panel{
+                border-top: 0px;
+                border-radius: 0 0 7px 7px;
+            }
+            .panel-body{
+                .message{
+                    border-bottom: 1px solid #DDDDDD;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    img{
+                        width: 100px;
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                    }
+                    .message-right{
+                        padding-left: 10px;
+                        p{
+                            line-height: 26px;
+                        }
+                    }
+
+                }
+
+                //  金额
+                .money{
+                    line-height: 70px;
+                    font-size: 20px;
+                    .row{
+                        div{
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                //  按钮
+                .btnopt{
+                    margin-top: 20px;
+
+                }
+                //  认证
+                .approve{
+                    margin-top: 46px;
+                    .approvetextbox{
+                        margin-bottom: 10px;
+
+                    }
+                    .approve-legt-text{
+                        padding-left: 66px;
+                        p.textbold{
+                            color: #333;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            //定义按钮
+
+            .row{
+                position: relative;
+                transition:left 500ms;
+                .btnrightbtn{
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left:16px;
+                    padding: 20px 8px;
+                }
+            }
+            //    定义收缩的侧栏
+            .col-sm-3{
+                position: absolute;
+                width: 50%;
+                left: -50%;
+            }
+            .row.active{
+                left:50%;
+            }
+
+
+        }
+    }

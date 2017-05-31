@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.col-sm-4 .panel-heading1 {
+  background: #40d47e;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  color: white;
+}
+.col-sm-4 .panel-heading2 {
+  background: #ec7e20;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  color: white;
+}
+.col-sm-4 .panel-heading3 {
+  background: #2ca2ee;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  color: white;
+}
+.col-sm-4 .panel-body {
+  padding: 20px;
+}
+.col-sm-4 .panel-body p {
+  font-size: 18px;
+}
+.col-sm-4 .panel-body ul {
+  list-style-type: none;
+}
+.col-sm-4 .panel-body ul div {
+  height: 10px;
+  width: 10px;
+  background: deeppink;
+  float: left;
+  margin: 4px 5px 0 0;
+}

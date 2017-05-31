@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js
+END
+tab.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/tab.js
+END
+.jshintrc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/.jshintrc
+END
+alert.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/alert.js
+END
+.jscsrc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/.jscsrc
+END
+popover.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/popover.js
+END
+scrollspy.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/scrollspy.js
+END
+tooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/tooltip.js
+END
+transition.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/transition.js
+END
+button.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/button.js
+END
+dropdown.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/dropdown.js
+END
+modal.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/modal.js
+END
+affix.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/affix.js
+END
+carousel.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/carousel.js
+END
+collapse.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/work/!svn/ver/20/p2p/trunk/Code/lib/bootstrap/js/collapse.js
+END
